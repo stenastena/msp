@@ -1,4 +1,4 @@
-# msp
+# MSP
 
 - "1 azure-bastion"
 Deploying the node of Azure Bastion. 
