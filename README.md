@@ -1,5 +1,24 @@
 # msp
+
+- "1 azure-bastion"
+Deploying the node of Azure Bastion. 
 			
+- "2 storage-file-share" 
+Deploying the Azure Fie storage
+
+- "3 Umbarco auto deploy"
+Deploying the CMS Umraco
+			
+- "4 vm-simple-windows"
+Deploying the VM Windows    
+				
+- "5 vm-simple-linux"
+Deploying the VM Linux  
+	
+- "6 openvpn-access-server-ubuntu"
+Deploying the server VPN based on OpenVPN
+
+--------------------------------------------------
 - "1 azure-bastion"
 развертывание узла Bastion. В одном каталоге лежат два скрипта и два файла параметров для разных сценариев развертывания: с чистого листа и в существующую ресурсную группу с существующей сетью Vnet.
 			
@@ -23,20 +42,4 @@
 Сокращенный набор параметры задается через файл параметров azuredeploy.parameters.json.
 Полный набор параметров находится в соответствующем блоке ARM шаблона azuredeploy.json 
 
-- "1 azure-bastion"
-Deploying the node of Azure Bastion. 
-			
-- "2 storage-file-share" 
-Deploying the Azure Fie storage
 
-- "3 Umbarco auto deploy"
-Deploying the CMS Umraco
-			
-- "4 vm-simple-windows"
-Deploying the VM Windows    
-				
-- "5 vm-simple-linux"
-Deploying the VM Linux  
-	
-- "6 openvpn-access-server-ubuntu"
-Deploying the server VPN based on OpenVPN
