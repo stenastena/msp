@@ -5,7 +5,7 @@ Connect-AzAccount
 Set-AzContext -SubscriptionId b7cfd124-be9c-4caf-93e5-09260a490650
 
 $rgName = "rgMSP-MonitoringPRTG"
-#New-AzResourceGroup -Name $rgName -Location "West Europe" #use this command when you need to create a new resource group for your deployment
+New-AzResourceGroup -Name $rgName -Location "West Europe" #use this command when you need to create a new resource group for your deployment
 
 cd ".\1 azure-bastion"   
 

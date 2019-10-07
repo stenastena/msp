@@ -1,5 +1,5 @@
 ﻿#Вводим логин и пароль для входа в подписку
-#Connect-AzAccount
+Connect-AzAccount
 
 #переключаемся в нашу подписку (для случаев) если их много
 Set-AzContext -SubscriptionId b7cfd124-be9c-4caf-93e5-09260a490650
