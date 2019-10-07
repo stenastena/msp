@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "superadmin"
+    },
+    "adminPasswordOrKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAi+TEIQKpsh9KeYKSrmIWrZzQgP8t9SIGnOMJ5iuYjMYRatCHY6Za+VWnjSDfeJBrANEyu1drkZYxa3q6oEH9BLglWM2zekHJm1A7VfPUP6AMR1WeCBmwtzYRZ4NJPVNEVCoz5NZjhv6RbB8NiOM7tpsuKJTzkwJbduALyf2EwXdi81vSY+8hGx1SRwseJ4teSX87PzcKdQcjpipmdx6QFZusawhZYOXhAwZysN/95ABwutu9GCyC5SK5DTU0WH2ubGaNtEyxDOTXm2H9lluYMUGqsg37eAHTydS9pg5vW1z5XrxthOch2BIeOFXeLaNDNU7WuEllqi/leqaBH/b/bQ=="
+    },
+    "dnsLabelPrefix": {
+      "value": "vmlinux222"
+    }
+  }
+}
