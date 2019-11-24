@@ -1,2 +1,4 @@
 #!/bin/bash
-docker ps -a
+#docker ps -a
+ifconfig
+hostname
