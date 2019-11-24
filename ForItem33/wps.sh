@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker start wp02
+sudo docker start wp007
