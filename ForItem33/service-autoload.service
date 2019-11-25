@@ -1,0 +1,10 @@
+[Unit]
+Description=This service allow to autostart script of executong of container with Wordpress
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart='/usr/local/bin/wps.sh'
+
+[Install]
+WantedBy=multi-user.target

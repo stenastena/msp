@@ -5,8 +5,15 @@ sudo docker run --name wp007 -p 8080:80 -e WORDPRESS_DB_HOST=wordpressmsp-mysqls
 -e WORDPRESS_DB_USER=superadmin@wordpressmsp-mysqlserver -e WORDPRESS_DB_PASSWORD=1q21!Q@!1q21 \
 -e WORDPRESS_DB_NAME=wordpressmspdb -d wordpress
 
-#making autostartung container with Wordpress
-cd /etc/init.d
+#load script for autostartung container with Wordpress
+cd /usr/local/bin
 sudo curl -O https://raw.githubusercontent.com/stenastena/msp/master/ForItem33/wps.sh
-sudo chmod +x /etc/init.d/wps.sh
-sudo update-rc.d wps.sh defaults 80
+sudo chmod +x /usr/local/bin/wps.sh
+
+#making service for autloloading scrits
+cd /lib/systemd/system
+sudo curl -O https://raw.githubusercontent.com/stenastena/msp/master/ForItem33/service-autoload.service
+sudo chmod 644  /lib/systemd/system/service-autoload.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable service-autoload.service
