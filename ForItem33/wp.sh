@@ -1,4 +1,5 @@
 #!/bin/bash -x
+sleep 15s
 sudo snap install docker
 sleep 5s
 sudo docker run --name wp007 -p 8080:80 -e WORDPRESS_DB_HOST=wordpressmsp-mysqlserver.mysql.database.azure.com:3306 \
